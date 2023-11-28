@@ -78,6 +78,10 @@ if (mode !== "export") {
         source: "/sharegpt",
         destination: "https://sharegpt.com/api/conversations",
       },
+      {
+        source: "/api/cohere/:path*",
+        destination: "https://api.cohere.ai/:path*",
+      },
     ];
 
     const apiUrl = process.env.API_URL;
