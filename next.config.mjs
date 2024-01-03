@@ -82,6 +82,10 @@ if (mode !== "export") {
         source: "/api/cohere/:path*",
         destination: "https://api.cohere.ai/:path*",
       },
+      {
+        source: "/api/google/:path*",
+        destination: "https://generativelanguage.googleapis.com/:path*",
+      },
     ];
 
     const apiUrl = process.env.API_URL;
